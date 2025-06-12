@@ -9,9 +9,9 @@ function App() {
         </div>
         <nav className="space-x-6 text-sm">
           <a href="#apropos" className="hover:text-blue-400 transition">Qui sommes-nous?</a>
-          <a href="#evenements" className="hover:text-blue-400 transition">Événements</a>
-          <a href="#partenaires" className="hover:text-blue-400 transition">Partenaires</a>
-          <a href="#formations" className="hover:text-blue-400 transition">Formations</a>
+          <a href="#evenements" className="hover:text-blue-400 transition">Équipes</a>
+          <a href="#partenaires" className="hover:text-blue-400 transition">Événements</a>
+          <a href="#formations" className="hover:text-blue-400 transition">Partenaire</a>
           <a href="#benevoles" className="hover:text-blue-400 transition">Bénévoles</a>
           <a href="#contact" className="hover:text-blue-400 transition">Contact</a>
         </nav>
@@ -26,21 +26,40 @@ function App() {
         <p>UdeM Entreprend est l'association étudiante dédiée à l'entrepreneuriat de l'Université de Montréal.
           Nous accompagnons les étudiants dans leur parcours entrepreneurial en offrant des ressources,
           des formations et un réseau solide pour transformer leurs idées en projets concrets.</p>
-        <div>
-          <h1>Notre Vision</h1>
-          <p>Créer un écosystème entrepreneurial dynamique au sein de l'Université de Montréal,
-            où chaque étudiant peut développer son potentiel entrepreneurial et contribuer à l'innovation de demain.</p>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-10">
+          <div className="w-full md:w-1/2 text-left">
+            <h1 className="text-2xl font-semibold text-blue-300 mb-2">Notre Mision</h1>
+            <p className="text-gray-300">
+              Accompagner, former et connecter les étudiants entrepreneurs en leur fournissant les outils,
+              ressources et opportunités nécessaires pour réussir dans leurs projets entrepreneuriaux.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2">
+            <img src="/ton-image.jpg" alt="Vision de l'association" className="w-full h-auto rounded-lg shadow-lg" />
+          </div>
         </div>
-        <div>
-          <h1>Notre Mission</h1>
-          <p>Accompagner, former et connecter les étudiants entrepreneurs en leur fournissant les outils,
-            ressources et opportunités nécessaires pour réussir dans leurs projets entrepreneuriaux.</p>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-10">
+          <div className="w-full md:w-1/2">
+            <img src="/" alt="Vision de l'association" className="w-full h-auto rounded-lg shadow-lg" />
+          </div>
+          <div className="w-full md:w-1/2 text-left">
+            <h1 className='text-2xl font-semibold text-blue-300 mb-2'>Notre Vision</h1>
+            <p className="text-gray-300">
+              Créer un écosystème entrepreneurial dynamique au sein de l'Université de Montréal,
+              où chaque étudiant peut développer son potentiel entrepreneurial et contribuer à l'innovation de demain.
+            </p>
+          </div>
         </div>
-        <div>
-          <h1>Notre Histoire</h1>
-          <p>Fondée par des étudiants passionnés d'entrepreneuriat, UdeM Entreprend a vu le jour avec l'ambition de créer une communauté entrepreneuriale forte à l'Université de Montréal.
-            Depuis nos débuts, nous avons accompagné des centaines d'étudiants dans la réalisation de leurs projets, organisant des événements inspirants et créant des liens durables avec 
-            l'écosystème entrepreneurial montréalais.</p>
+        <div className="flex flex-col items-center text-center mt-16 space-y-6">
+          <div className="max-w-3xl">
+            <h1 className='text-2xl font-semibold text-blue-300 mb-2'>Notre Histoire</h1>
+            <p className="text-gray-300">Fondée par des étudiants passionnés d'entrepreneuriat, UdeM Entreprend a vu le jour avec l'ambition de créer une communauté entrepreneuriale forte à l'Université de Montréal.
+              Depuis nos débuts, nous avons accompagné des centaines d'étudiants dans la réalisation de leurs projets, organisant des événements inspirants et créant des liens durables avec
+              l'écosystème entrepreneurial montréalais.</p>
+        </div>
+        <div className="w-full md:w-1/2">
+            <img src="/ton-image.jpg" alt="Vision de l'association" className="w-full h-auto rounded-lg shadow-lg" />
+          </div>
         </div>
       </div>
     </div>
